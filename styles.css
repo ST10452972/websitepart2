@@ -1,0 +1,113 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('Site\ of\ Grace\ backround.webp') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.2; 
+    z-index: -1;
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(51, 132, 253);
+}
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(51, 132, 253);
+
+}
+p{
+    font: bold;
+    font-size: medium;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(248, 164, 9);
+    opacity: 0.8;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(109, 62, 0);
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+    
+}
+
+main {
+    text-align: center;
+    padding: 50px;
+}
+
+/*.hero {
+    padding: 60px 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+}*/
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(248, 164, 9);
+    color: rgb(109, 62, 0);
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+}
